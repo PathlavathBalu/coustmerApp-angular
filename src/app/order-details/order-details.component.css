@@ -1,0 +1,304 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+}
+
+body div,
+body p,
+body small,
+body span,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body button,
+body input {
+  font-family: "Roboto", sans-serif !important;
+  line-height: normal !important;
+}
+
+.order .heading_div {
+  padding: 15px 10px;
+  background: #F3F4F6;
+}
+
+.order .heading_div .head {
+  position: relative;
+}
+
+.order .heading_div .head h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5200C6;
+  height: 33px;
+  position: relative;
+  z-index: 9;
+}
+
+.order .heading_div .head h3 svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.order .heading_div .head p {
+  height: 33px;
+  position: absolute;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.order .cart_item {
+  padding: 10px;
+}
+
+.order .cart_item .order_d {
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.order .cart_item .order_d .items {
+  margin: 10px 0;
+}
+
+.order .cart_item .order_d .items .addons .add_modfiers .part_of_cart h3 {
+  color: #949494;
+  font-size: 12px;
+}
+
+.order .cart_item .order_d .items .addons .add_modfiers .part_of_cart h3 span {
+  padding-left: 8px;
+}
+
+.order .cart_item .order_d .items .addons .adn h5 {
+  margin: 0;
+  font-size: 13px;
+  color: #ff2300;
+}
+
+.order .cart_item .order_d .items .addons .adn span svg {
+  width: 9px;
+  height: 9px;
+  margin-left: 6px;
+  fill: #ff2300;
+}
+
+.order .cart_item .order_d .items .part_of_cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px 0;
+}
+
+.order .cart_item .order_d .items .part_of_cart h3 {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.order .cart_item .order_d .items .part_of_cart .title {
+  width: 50%;
+}
+
+.order .cart_item .order_d .items .part_of_cart .price {
+  width: 20%;
+  text-align: right;
+}
+
+.order .cart_item .order_d .items .part_of_cart .qun {
+  width: 30%;
+  text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.order .cart_item .order_d .items .part_of_cart .qun h3 {
+  width: 80px;
+  margin: 0px auto;
+}
+
+.order .cart_item .order_d .items .part_of_cart .add_btn {
+  margin-top: 0px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 30%;
+}
+
+.order .cart_item .order_d .items .part_of_cart .add_btn .btn button {
+  width: 80px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+  font-weight: bold;
+  padding: 0;
+  height: 32px;
+  margin: 0;
+  outline: 0;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  color: #ff2300;
+  position: relative;
+  background: #fff;
+  margin: 0px auto;
+}
+
+.order .cart_item .order_d .items .part_of_cart .add_btn .btn .inc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+.order .cart_item .order_d .items .part_of_cart .add_btn .btn .inc span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #58A940;
+  cursor: pointer;
+}
+
+.order .cart_item .order_d .items .part_of_cart .add_btn .btn .inc span img {
+  width: 10px;
+}
+
+.order .cart_item .order_d .items .part_of_cart .add_btn p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  height: 14px;
+}
+
+.order .cart_item .order_d .items .suggstion {
+  position: relative;
+  margin: 8px 0;
+}
+
+.order .cart_item .order_d .items .suggstion .sug span svg {
+  position: absolute;
+  top: 11px;
+  left: 6px;
+}
+
+.order .cart_item .order_d .items .suggstion .sug input {
+  border: 0;
+  background: #F2F7FD;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0px 15px;
+  color: #AFBEC4;
+  font-size: 14px;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.order .cart_item .total_price_amount .price {
+  padding: 10px 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.order .cart_item .total_price_amount .price .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order .cart_item .total_price_amount .price .total .them-c {
+  color: #ff2300;
+}
+
+.order .cart_item .total_price_amount .price .total h3 {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.order .cart_item .total_price_amount .price .total h3 .green {
+  color: #299976;
+}
+
+.order .cart_item .total_price_amount .price .total h4 {
+  margin: 5px 0;
+  color: #299976;
+  font-size: 13px;
+}
+
+.order .cart_item .total_price_amount .price .total h4 .gray {
+  color: #A1A5AC;
+}
+
+.order .cart_item .total_price_amount .price .tax h4 {
+  margin: 0;
+  color: #93959F;
+  font-size: 13px;
+}
+
+.order .cart_item .total_price_amount .payments {
+  padding: 10px 0 0;
+}
+
+.order .cart_item .total_price_amount .payments .head h5 {
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.order .cart_item .total_price_amount .payments .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.order .cart_item .total_price_amount .payments .total h4 {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #A1A5AC;
+}
+
+.order .cart_item .total_price_amount .payments .total h4 b {
+  color: #000;
+}
+/*# sourceMappingURL=order-details.component.css.map */

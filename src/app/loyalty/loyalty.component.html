@@ -1,0 +1,132 @@
+<!-- left order history -->
+<div class="lefthistory">
+    <div class="heading_div" [routerLink]="['/items']">
+        <div class="head">
+            <h3><svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0371 20.0827L0.792152 10.9458C0.402616 10.5612 0.402616 9.93981 0.792152 9.5542L10.0371 0.417333C10.5995 -0.139111 11.5144 -0.139111 12.0777 0.417333C12.64 0.973776 12.64 1.87687 12.0777 2.43332L4.16913 10.2505L12.0777 18.0657C12.64 18.6231 12.64 19.5262 12.0777 20.0827C11.5144 20.6391 10.5995 20.6391 10.0371 20.0827Z" />
+                </svg>
+                Back</h3>
+                <h3 class="bk">Loyalty</h3>
+                <h3><svg style="margin: 0;" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="24"> <path d="M2 6L5 2H17L20 6M2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V6M2 6H20M15 10C15 11.0609 14.5786 12.0783 13.8284 12.8284C13.0783 13.5786 12.0609 14 11 14C9.93913 14 8.92172 13.5786 8.17157 12.8284C7.42143 12.0783 7 11.0609 7 10" stroke="#2E2F37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/> </mask> <g mask="url(#mask0)"> <rect x="-39" y="-38" width="100" height="100" fill="#292D42"/> </g> </svg>
+                    </h3>
+        </div>
+    </div>
+    <div class="tabs_desserts">
+        <div class="tab">
+            <ul>
+                <li  (click)="ShowDiv('A')" (click)="onClick(1)" [ngClass]="{'active': tab==='tab1'}">Scan</li>
+                <li><span></span></li>
+                <li  (click)="ShowDiv('B')" (click)="onClick(2)" [ngClass]="{'active': tab==='tab2'}">History</li>
+            </ul>
+        </div>
+    </div>
+    <!--  History++++++++++++++++++++++++++ -->
+    <div class="heading_history" *ngIf="currDiv == 'B'">
+
+        <div class="history" *ngFor = 'let history of loyaltyHhistoryData'>
+            <div class="details">
+                <div class="iteams_name">
+                    <h3><span>Order #{{history.order_id}}</span></h3>
+                    <h4>Earned:{{history.collected_points}} points</h4>        
+                </div>
+                <div class="re_order">
+                    <div class="stutas">
+                        <div class="price">
+                            <p>2 items</p>
+                            
+                        </div>
+                        <span>|</span>
+                        <div class="deli">
+                            <p class="theme">Amount: £{{history.loyalty_amount}}</p>
+                        </div>
+                       
+                    </div>
+                    <p>{{history.insert_dt}}</p>
+                    
+                </div>
+              
+            </div>
+           
+        </div>
+    </div>
+    <!--  History++++++++++++++++++++++++++ -->
+
+    <!-- scan++++++++++++++++++++++++++ -->
+
+    <div class="loyalty_scan" *ngIf="currDiv == 'A'">
+        <div class="loyalty_points">
+           <div class="pnt-head">
+            <div class="head">
+                <h3>Loyalty Points</h3>
+            </div>
+            <div class="add_pnt">
+                <div class="enr">
+                    <h3>Earned<span>{{remainPoints}}</span></h3>
+                    <h3>Redeemed<span>{{redemeedPoints}}</span></h3>
+                </div>
+                <div class="line">
+                    <span></span>
+                </div>
+                <div class="remaining">
+                    <h3>Remaining<span>{{remainPoints}}</span></h3>
+                </div>
+            </div>
+           </div>
+           <div class="dashed_line">
+            <div class="double_points">
+                <h3>DOUBLE<br>POINTS
+                    <span> 4 Days <br> Remaining</span></h3>
+                <svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M84.9619 12.2424C78.7289 3.2753 80.2035 3.93193 69.4153 5.27568C67.7096 5.48813 65.9765 5.1182 64.5061 4.22792C55.1961 -1.40927 56.8038 -1.40931 47.4939 4.22781C46.0235 5.11816 44.2902 5.48808 42.5844 5.27554C31.7964 3.93136 33.271 3.27528 27.0387 12.2422C26.0604 13.6496 24.6336 14.6904 22.9946 15.192C12.5813 18.379 13.6698 17.1699 11.6 27.9296C11.2775 29.6058 10.4015 31.1295 9.11493 32.2514C0.877345 39.4346 1.38301 37.8749 3.84908 48.5636C4.23197 50.2232 4.04954 51.9666 3.33128 53.5109C-1.29223 63.4519 -1.46427 61.8162 5.11247 70.5706C6.13629 71.9334 6.67647 73.6027 6.64522 75.3069C6.4441 86.2742 5.62647 84.8565 15.163 90.1567C16.6578 90.9875 17.8338 92.2989 18.4976 93.875C22.7448 103.959 21.4321 103.005 32.2702 103.946C33.9803 104.095 35.5956 104.817 36.8467 105.992C44.7936 113.456 43.2152 113.121 53.4894 109.553C55.1133 108.989 56.8859 108.989 58.5099 109.553C68.7846 113.121 67.2057 113.456 75.1525 105.992C76.4036 104.817 78.0189 104.095 79.729 103.946C90.567 103.005 89.2544 103.96 93.5016 93.8752C94.1654 92.299 95.3415 90.9875 96.8364 90.1567C106.373 84.8565 105.556 86.2742 105.355 75.3069C105.323 73.6027 105.864 71.9334 106.887 70.5706C113.464 61.8162 113.292 63.4513 108.669 53.5108C107.951 51.9665 107.769 50.2233 108.151 48.5637C110.618 37.8748 111.123 39.4346 102.885 32.2514C101.598 31.1295 100.722 29.6058 100.4 27.9295C98.3301 17.1704 99.4192 18.379 89.0058 15.192C87.3669 14.6904 85.9401 13.6496 84.9619 12.2424Z"/>
+                    </svg>
+
+            </div>
+           </div>
+           <div class="scan_code">
+               <div class="bar_code">
+                   <div class="top_bar_line">
+                  <div class="line_o">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0.0981445C0.447715 0.0981445 0 0.54586 0 1.09815V39.7211C0 40.2734 0.447716 40.7211 1 40.7211C1.55229 40.7211 2 40.2734 2 39.7211L2 7.29424C2 4.53282 4.23857 2.29424 7 2.29424L39 2.29424C39.5523 2.29424 40 1.84653 40 1.29424C40 0.741958 39.5523 0.294243 39 0.294243L2.09805 0.294239C2.0439 0.294239 2 0.250342 2 0.196192C2 0.142042 1.9561 0.0981445 1.90195 0.0981445H1Z"/>
+                        </svg>
+                  </div>
+                  <div class="line_o">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M35 2C37.7614 2 40 4.23858 40 7L40 40.7208C40 41.2731 40.4477 41.7208 41 41.7208C41.5523 41.7208 42 41.2731 42 40.7208V2C42 0.895431 41.1046 0 40 0H1C0.447716 0 0 0.447715 0 1C0 1.55228 0.447716 2 1 2H35Z"/>
+                        </svg>
+                  </div>
+                   </div>
+                 
+                   <div class="code">
+                    <!-- <img src="../../assets/images/Scan.png"> -->
+                    <ngx-qrcode
+                    [elementType]="elementType"
+                    [errorCorrectionLevel]="correctionLevel"
+                    [value]="value"
+                    cssClass="bshadow">
+                </ngx-qrcode>
+                   </div>
+                   <div class="top_bar_line">
+                    <div class="line_o">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99999 39.3413C4.23857 39.3413 2 37.1027 2 34.3413L2 1.9137C2 1.36141 1.55229 0.913696 1 0.913696C0.447716 0.913696 0 1.36141 0 1.9137V40.5366C0 41.0889 0.447715 41.5366 1 41.5366L1.90232 41.5366C1.95627 41.5366 2 41.4929 2 41.4389C2 41.385 2.04373 41.3413 2.09768 41.3413H39.4906C40.0429 41.3413 40.4906 40.8935 40.4906 40.3413C40.4906 39.789 40.0429 39.3413 39.4906 39.3413H6.99999Z"/>
+                            </svg>       
+                    </div>
+                    <div class="line_o">
+                        <svg width="40" height="42" viewBox="0 0 40 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M38 34.4137C38 37.1512 35.7986 39.3798 33.0614 39.4134L1.20552 39.8043C0.654095 39.811 0.212231 40.2629 0.217846 40.8144C0.223476 41.3675 0.677002 41.8109 1.23006 41.8041L37.9077 41.354C37.9585 41.3534 38 41.3944 38 41.4452C38 41.4955 38.0408 41.5363 38.0911 41.5363L39 41.5363C39.5523 41.5363 40 41.0886 40 40.5363V1.91339C40 1.3611 39.5523 0.913387 39 0.913387C38.4477 0.913387 38 1.3611 38 1.91339L38 34.4137Z"/>
+                            </svg>
+                    </div>
+                     </div>
+                   <div class="id">
+                       <h4>E-mail ID: {{email}}</h4>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    Loyalty.postMessage("hello loyalty");
+</script>

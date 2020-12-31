@@ -1,0 +1,129 @@
+@import "../../styles";
+
+.heading_div {
+  padding: 15px 10px;
+  background: #F3F4F6;
+
+  .head {
+    position: relative;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: $theme_color_2;
+      height: 33px;
+      position: relative;
+      z-index: 9;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        fill: $theme_color_2;
+      }
+    }
+
+    p {
+      height: 33px;
+      position: absolute;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+
+.epty-cart {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    .cart{
+        text-align: center;
+    }
+  .hed {
+    text-align: center;
+
+    h3 {
+        margin-top: 20px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    p {
+
+      font-size: 20px;
+
+    }
+  }
+
+}
+
+.fixed_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 99;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+  .contune {
+    .process_btn {
+      position: relative;
+
+      .process {
+        svg {
+          fill: $theme_color_2;
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+          border: 0;
+          font-size: 20px;
+          background: transparent;
+          color: #fff;
+          font-weight: normal;
+          outline: 0;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: -5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0px 20px;
+
+          p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+
+            span {
+              width: 28px;
+              display: inline-block;
+
+              img {
+                width: 100%;
+                margin-bottom: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

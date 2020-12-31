@@ -1,0 +1,250 @@
+@import "../../styles";
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.sidenav-container {
+  height: 100%;
+  z-index: 99;
+}
+
+.sidenav {
+  width: 300px;
+  background: $theme_color_2;
+  color: #fff;
+  font-size: 14px;
+  z-index: 99;
+
+  hr {
+    margin: 20px 31px;
+    border-bottom: solid 0.1px #fff !important;
+    height: 0;
+    border: 0;
+  }
+
+  .ver {
+    margin: 10px 31px;
+
+    p {
+      font-size: 12px;
+      margin-left: 30px;
+    }
+  }
+}
+
+.mat-drawer-inner-container {
+  hr {
+    margin: 0px 31px;
+    border-bottom: solid 0.7px #fff;
+  }
+}
+
+.mat-list-base .mat-list-item {
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+
+  .img {
+    margin-right: 10px;
+
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.mat-list-item-content {
+  padding: 0px 35px !important;
+}
+
+.mg_bt {
+  margin-bottom: 56px;
+  @media only screen and (min-width: 1125px) {
+    margin-bottom: 70px;
+   
+  }
+}
+
+.mat-toolbar.mat-primary {
+  background: #F3F4F6;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.hed_logo {
+  background: #fdfdfd;
+  padding: 5px 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+
+.head_part {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  .ligo {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 35px;
+    }
+
+  }
+
+  .table {
+    display: flex;
+    align-items: center;
+
+    .search,
+    .table,
+    .cart {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      span {
+        background: $theme_color;
+
+        padding: 5px;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        border-radius: 50px;
+        font-size: 19px;
+
+        small {
+          width: 10px;
+          height: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        stroke: #2E2F37;
+
+      }
+    }
+  }
+}
+
+// offer_banner+++++++++++++++++
+.offer {
+  display: none;
+  transition-duration: 10s;
+
+  .offer_rib {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+
+    .offer {
+      svg {
+        fill: #F8254A;
+        width: 450px;
+        height: 45px;
+      }
+
+      h3 {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right: 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        bottom: 0;
+        margin: 0;
+        color: #fff;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 35px;
+          height: 35px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+// end+offer_banner+++++++++
+::ng-deep {
+  .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: rgb(255 255 255 / 0%);
+    position: fixed !important;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+
+  }
+
+  a {
+    background-color: transparent !important;
+  }
+
+  .mat-drawer-inner-container {
+    overflow: hidden !important;
+  }
+
+  .mat-icon-button {
+    width: auto !important;
+    height: auto !important;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .mat-form-field-appearance-fill .mat-form-field-ripple {
+    bottom: 0;
+    height: 1px !important;
+    background-color: $theme_color_2 !important;
+  }
+
+  .mat-button-ripple.mat-ripple,
+  .mat-button-focus-overlay {
+    background: transparent !important;
+  }
+
+  .mat-list-base .mat-list-item .mat-list-item-ripple,
+  .mat-list-base .mat-list-option .mat-list-item-ripple {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: revert !important;
+    pointer-events: none;
+  }
+}
+
+// web-version+++++++++++++++++++++++++++++
+
+

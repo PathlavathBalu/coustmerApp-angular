@@ -1,0 +1,216 @@
+@import "../../styles";
+
+//   end_header_part+++++++++++++++++
+.lefthistory {
+  position: relative;
+  z-index: 99;
+
+  input {
+    display: none;
+  }
+
+  .sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+
+    .heading_history {
+      .hedding {
+        padding: 15px;
+        background: #F3F4F6;
+
+        h3 {
+          margin: 0;
+          text-align: center;
+          padding: 10px 0;
+          font-size: 16px;
+          // border-bottom: solid 1px #e4e4e4;
+        }
+      }
+
+      .history {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 10px;
+        border-bottom: 0.7px solid #D4D5D7;
+
+        .details {
+          width: 100%;
+          padding-right: 10px;
+
+          .iteams_name {
+            h3 {
+              margin: 0;
+
+              span {
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0;
+              }
+            }
+          }
+
+          .time_date {
+            h4 {
+              margin: 6px 0;
+              color: #A0A2AA;
+              font-weight: normal;
+              font-size: 12px;
+            }
+          }
+
+          .stutas {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .price,
+            .deli,
+            .status-line {
+              p {
+                margin: 0;
+                font-size: 12px;
+                margin: 0;
+
+              }
+            }
+
+            .deli {
+              p {
+                color: #299976;
+              }
+            }
+
+            .status-line {
+              p {
+                color: $theme_color_2;
+
+              }
+            }
+          }
+        }
+
+        .re_order {
+
+          flex-shrink: 0;
+
+          button {
+            width: 90px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+            font-weight: bold;
+            padding: 0;
+            height: 35px;
+            margin: 0;
+            outline: 0;
+            border-radius: 5px;
+            border: 0;
+            font-size: 14px;
+            color: $theme_color;
+            position: relative;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .btn {
+        padding: 40px 0;
+        text-align: center;
+        position: fixed;
+        bottom: 0 !important;
+        left: 0;
+        right: 0;
+        background: #fff;
+
+        .vew_all {
+          button {
+            background: transparent;
+            border-radius: 100px;
+            height: 45px;
+            width: 130px;
+            font-size: 16px;
+            border: solid 1px $theme_color;
+            color: $theme_color;
+            box-shadow: none;
+            outline: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  #sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 290px;
+    margin-top: 0px;
+    transform: translateX(-294px);
+    transition: transform 250ms ease-in-out;
+    background: #ffffff;
+
+    @media only screen and (min-width: 768px) {
+      width: 380px;
+      transform: translateX(-380px);
+    }
+
+  }
+
+  input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+    box-shadow: 0px 0 350px #000;
+
+    .sidebarIconToggle {
+      opacity: 1;
+    }
+
+    .two-h {
+      display: block;
+     
+    }
+
+    .one-h {
+      display: none;
+    }
+    
+    .mat-body,
+    .mat-body-1,
+    .mat-typography {
+      overflow: hidden !important;
+    }
+  }
+
+
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    bottom: 22%;
+    right: -24px;
+    opacity: 0.5;
+
+    @media only screen and (min-width: 768px) {
+      opacity: 1;
+    }
+
+
+    svg {
+      width: 30px;
+      height: 100px;
+      fill: $theme_color !important;
+    }
+
+    .two-h {
+      display: none;
+    }
+  }
+
+
+}

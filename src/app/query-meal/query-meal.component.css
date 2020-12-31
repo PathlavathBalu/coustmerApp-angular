@@ -1,0 +1,410 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+}
+
+body div,
+body p,
+body small,
+body span,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body button,
+body input {
+  font-family: "Roboto", sans-serif !important;
+  line-height: normal !important;
+}
+
+.head_part {
+  padding: 12px 10px;
+  background: #F3F4F6;
+  cursor: pointer;
+  outline: 0;
+}
+
+.head_part .back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.head_part .back .bak {
+  margin-right: 5px;
+}
+
+.head_part .back .bak img {
+  width: 30px;
+}
+
+.head_part .back .title h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.head_part .back .title h3 span {
+  display: block;
+  font-size: 15px;
+  color: #93959F;
+}
+
+.iteams {
+  padding: 10px;
+  padding-bottom: 150px;
+}
+
+@media only screen and (min-width: 992px) {
+  .iteams {
+    width: 1170px;
+    margin: 0px auto;
+  }
+}
+
+.iteams .tabs_desserts .tab {
+  margin: 0px 0 15px;
+}
+
+.iteams .tabs_desserts .tab ul {
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 200px;
+}
+
+.iteams .tabs_desserts .tab ul li {
+  list-style: none;
+  color: #93959F;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 6px 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iteams .tabs_desserts .tab ul li span {
+  width: 6px;
+  height: 6px;
+  background-color: #93959F;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.iteams .tabs_desserts .tab ul .active {
+  color: #ff2300;
+  font-weight: 900;
+}
+
+.iteams .tabs_desserts .tab ul .active::before {
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: #ff2300;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+}
+
+.iteams .iteam_menu_title .iteam_title {
+  margin-bottom: 10px;
+}
+
+.iteams .iteam_menu_title .iteam_title h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .iteams .food_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.iteams .food_items .iteam_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.7px solid #D4D5D7;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .iteams .food_items .iteam_menu {
+    width: 48%;
+  }
+}
+
+.iteams .food_items .iteam_menu:last-child {
+  border: 0;
+}
+
+.iteams .food_items .iteam_menu .iteam_name {
+  padding-right: 15px;
+  width: 100%;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .deals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .deals .img_deal {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .deals .img_deal svg {
+  width: 100%;
+  height: 100%;
+  fill: #ff2300;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .deals h6 {
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0;
+  color: #ff2300;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .menu_title .title h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .price_iteam .price p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .description .dec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .description .dec p {
+  margin: 0;
+  font-size: 12px;
+  color: #80808A;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .description .dec p span {
+  display: inline-block;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .description .dec p span svg {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 4px;
+  fill: #ff2300;
+}
+
+.iteams .food_items .iteam_menu .iteam_name .description .dec p small {
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  -webkit-line-clamp: 2;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 0;
+}
+
+.iteams .food_items .iteam_menu .item_img .img_part {
+  text-align: center;
+}
+
+.iteams .food_items .iteam_menu .item_img .img_part .img {
+  width: 120px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 120px;
+  border: solid 1px #eaeaea;
+}
+
+.iteams .food_items .iteam_menu .item_img .img_part .img img {
+  width: 100%;
+}
+
+.iteams .food_items .iteam_menu .item_img .img_part .add_btn {
+  margin-top: -18px;
+  width: 120px;
+}
+
+.iteams .food_items .iteam_menu .item_img .img_part .add_btn .btn button {
+  width: 100px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+  font-weight: bold;
+  padding: 0;
+  height: 32px;
+  margin: 0;
+  outline: 0;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  color: #ff2300;
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+}
+
+.iteams .food_items .iteam_menu .item_img .img_part .add_btn .btn button span {
+  position: absolute;
+  top: 0px;
+  right: 6px;
+}
+
+.iteams .food_items .iteam_menu .item_img .img_part .add_btn p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  height: 14px;
+}
+
+.btn_fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FAF7FF;
+  padding: 10px 15px;
+  -webkit-box-shadow: 0px 0px 1px #676767;
+          box-shadow: 0px 0px 1px #676767;
+  z-index: 99;
+}
+
+.btn_fixed .fixed .shwoing {
+  margin-bottom: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.btn_fixed .fixed .shwoing .tit p, .btn_fixed .fixed .shwoing .tit span {
+  margin: 0;
+  font-size: 12px;
+  color: #5200C6;
+  display: block;
+}
+
+.btn_fixed .fixed .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: solid 1px #5200C6;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.btn_fixed .fixed .btns button {
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5200C6;
+  outline: 0;
+}
+
+.btn_fixed .fixed .btns .two {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn_fixed .fixed .desserts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.btn_fixed .fixed .desserts .title .head h3 {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 5px 0 0;
+}
+
+.btn_fixed .fixed .desserts .title .pera p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.btn_fixed .fixed .desserts .hide_show .hide h3 {
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #5200C6;
+  cursor: pointer;
+}
+/*# sourceMappingURL=query-meal.component.css.map */

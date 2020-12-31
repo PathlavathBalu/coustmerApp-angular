@@ -1,0 +1,34 @@
+<!-- left order history -->
+<div class="lefthistory">
+    <div class="heading_div" [routerLink]="['/items']">
+        <div class="head">
+            <h3><svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0371 20.0827L0.792152 10.9458C0.402616 10.5612 0.402616 9.93981 0.792152 9.5542L10.0371 0.417333C10.5995 -0.139111 11.5144 -0.139111 12.0777 0.417333C12.64 0.973776 12.64 1.87687 12.0777 2.43332L4.16913 10.2505L12.0777 18.0657C12.64 18.6231 12.64 19.5262 12.0777 20.0827C11.5144 20.6391 10.5995 20.6391 10.0371 20.0827Z" />
+                </svg>
+                Back</h3>
+                <h3 class="bk">Search</h3>
+                <h3 class="filter_i" [routerLink]="['/filter']">  <img src="../../assets/images/filter.svg">
+                    <span><small>1</small></span>
+                    </h3>
+        </div>
+    </div>
+
+    <div class="search_i">
+        <div class="main">
+            <div class="suggstion">
+                <div class="sug">
+                    <span>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.63634 1.5C6.42269 1.5 5.23629 1.85989 4.22717 2.53416C3.21806 3.20843 2.43155 4.16679 1.9671 5.28806C1.50266 6.40933 1.38114 7.64314 1.61791 8.83348C1.85468 10.0238 2.43911 11.1172 3.29729 11.9754C4.15548 12.8336 5.24887 13.418 6.4392 13.6548C7.62953 13.8915 8.86334 13.77 9.98461 13.3056C11.1059 12.8411 12.0642 12.0546 12.7385 11.0455C13.4128 10.0364 13.7727 8.84999 13.7727 7.63634C13.7726 6.00891 13.126 4.44817 11.9753 3.29741C10.8245 2.14664 9.26376 1.5001 7.63634 1.5V1.5Z" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M12.2148 12.2144L16.5004 16.4999" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+                            
+                    </span>
+                    <input type="text" placeholder="Chicken">
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-category></app-category>
+
+</div>

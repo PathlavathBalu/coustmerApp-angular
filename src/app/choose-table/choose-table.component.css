@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+}
+
+body div,
+body p,
+body small,
+body span,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body button,
+body input {
+  font-family: "Roboto", sans-serif !important;
+  line-height: normal !important;
+}
+
+.choose_table .head {
+  text-align: center;
+}
+
+.choose_table .head h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F6F8FC;
+  margin: 0;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.choose_table .book_tab .tab {
+  padding: 25px;
+}
+
+.choose_table .book_tab .tab .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.choose_table .book_tab .tab .btn .active {
+  background: #f15a2b;
+  color: #fff;
+}
+
+.choose_table .book_tab .tab .btn .active span {
+  color: #fff;
+}
+
+.choose_table .book_tab .tab .btn .active small {
+  display: inline;
+}
+
+.choose_table .book_tab .tab .btn button {
+  border: 0;
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  text-align: left;
+  background: #F1F1F1;
+  font-size: 25px;
+  margin: 10px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.choose_table .book_tab .tab .btn button span {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #898B95;
+  margin-bottom: 10px;
+}
+
+.choose_table .book_tab .tab .btn button small {
+  font-size: 25px;
+  display: none;
+}
+
+.choose_table .yes_no {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.choose_table .yes_no .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.choose_table .yes_no .btn .n {
+  width: 40%;
+}
+
+.choose_table .yes_no .btn .n button {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+  font-weight: bold;
+  padding: 0;
+  height: 45px;
+  margin: 0;
+  outline: 0;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+  color: #ff2300;
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
+.choose_table .yes_no .btn .yes {
+  width: 55%;
+}
+
+.choose_table .yes_no .btn .yes button {
+  width: 100%;
+  font-weight: bold;
+  padding: 0;
+  height: 45px;
+  margin: 0;
+  outline: 0;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+  position: relative;
+  background: #5200C6;
+  cursor: pointer;
+  color: #fff;
+}
+/*# sourceMappingURL=choose-table.component.css.map */

@@ -1,0 +1,142 @@
+@import "../../styles";
+
+
+.choose_table {
+  .head {
+    text-align: center;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F6F8FC;
+      margin: 0;
+      padding: 15px;
+      font-size: 18px;
+
+      span {
+        margin-right: 10px;
+      }
+
+    }
+  }
+}
+
+.book_tab {
+  padding-bottom: 55px;
+
+  .tab {
+    padding: 25px;
+
+    .btn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .active {
+        background: #f15a2b;
+        color: #fff;
+
+        span {
+          color: #fff;
+        }
+
+        small {
+          display: inline;
+        }
+      }
+
+      button {
+        border: 0;
+        padding: 10px;
+        height: 75px;
+        width: 75px;
+        background: #F1F1F1;
+        font-size: 25px;
+        margin: 6px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #585858;
+
+        span {
+          display: block;
+          font-size: 13px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          color: #898B95;
+          margin-bottom: 10px;
+        }
+
+        small {
+          font-size: 25px;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+// menu+part++++++++++++++
+
+
+
+.yes_no {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  background: #fff;
+  z-index: 9;
+  box-shadow: 0px 0px 1px #676767;
+
+  .btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .n {
+      width: 40%;
+
+      button {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+        font-weight: bold;
+        padding: 0;
+        height: 45px;
+        margin: 0;
+        outline: 0;
+        border-radius: 5px;
+        border: 0;
+        font-size: 18px;
+        color: $theme_color;
+        position: relative;
+        background: #fff;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+
+
+    .yes {
+      width: 55%;
+
+      button {
+        width: 100%;
+        font-weight: bold;
+        padding: 0;
+        height: 45px;
+        margin: 0;
+        outline: 0;
+        border-radius: 5px;
+        border: 0;
+        font-size: 18px;
+        position: relative;
+        background: $theme_color_2;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,258 @@
+@import "../../styles";
+
+//   end_header_part+++++++++++++++++
+.lefthistory {
+  position: relative;
+  z-index: 10;
+
+  .heading_div {
+    padding: 15px 10px;
+    background: #F3F4F6;
+
+    .head {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .bk {
+        color: #000;
+      }
+
+      h3 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 20px;
+        height: 33px;
+        position: relative;
+        z-index: 9;
+        font-weight: 500;
+
+        span {
+          color: $theme_color_2;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+      }
+
+      p {
+        height: 33px;
+        position: absolute;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .items_filter {
+    padding: 10px;
+
+    .filter_i {
+      .tilte {
+        h3 {
+          font-size: 20px;
+          font-weight: bold;
+          color: #999999;
+          text-transform: uppercase;
+        }
+      }
+
+      .cat {
+        margin-bottom: 10px;
+
+        .active {
+          border: 1px solid $theme_color !important;
+          color: $theme_color !important;
+        }
+
+        button {
+          border: 1px solid #C7CAD1;
+          background: transparent;
+          padding: 10px 20px;
+          border-radius: 50px;
+          font-size: 14px;
+          color: #999999;
+          font-weight: 500;
+          margin: 2px 9px 9px 0px;
+
+        }
+      }
+      // check_boxes++++++++++++++
+      .checkbox {
+        .active {
+          pointer-events: none;
+          opacity: 0.3;
+        }
+
+        .additems {
+          display: flex;
+          align-items: center;
+
+          .form-group {
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+
+            span {
+              small {
+                padding: 0px 20px;
+                margin-left: 15px;
+                font-size: 12px;
+              }
+            }
+
+            input {
+              padding: 0;
+              height: initial;
+              width: initial;
+              margin-bottom: 0;
+              display: none;
+              cursor: pointer;
+
+              &:checked+label:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                width: 4px;
+                height: 10px;
+                border: solid #fff;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+              }
+
+              &:checked+label:before {
+                background-color: $theme_color;
+                border: solid 1px $theme_color;
+              }
+            }
+
+            label {
+              display: flex;
+              padding: 0;
+              border-radius: 99em; // or something higher...
+              transition: 0.25s ease;
+              position: relative;
+              cursor: pointer;
+              align-items: end;
+              padding-right: 45px;
+
+              p {
+                margin: 0;
+                font-size: 14px;
+                display: flex;
+
+                small {
+                  font-size: 17px;
+                  margin-left: 10px;
+                  font-weight: bold;
+                  color: #93959F;
+                }
+
+                span {
+                  width: 20px;
+                  height: 20px;
+
+                  img {
+                    width: 15px;
+                    margin-left: 7px;
+                    margin-bottom: -4px;
+                  }
+                }
+              }
+
+              &:before {
+                content: '';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: solid 1px #828282;
+                padding: 8px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 6px;
+              }
+
+            }
+
+
+          }
+
+          .add_btn {
+            margin-top: 0px;
+            flex-shrink: 0;
+
+            .btn {
+              button {
+                width: 80px;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.46);
+                font-weight: bold;
+                padding: 0;
+                height: 32px;
+                margin: 0;
+                outline: 0;
+                border-radius: 5px;
+                border: 0;
+                font-size: 14px;
+                color: $theme_color;
+                position: relative;
+                background: #fff;
+                cursor: pointer;
+
+                //   span {
+                //     position: absolute;
+                //     top: 0px;
+                //     right: 6px;
+                //   }
+              }
+
+              .inc {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                span {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  color: #58A940;
+                  cursor: pointer;
+
+                  svg {
+                    width: 12px;
+                    height: 12px;
+                  }
+                }
+              }
+            }
+
+            p {
+              margin: 5px 0 0;
+              font-size: 11px;
+              height: 14px;
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}

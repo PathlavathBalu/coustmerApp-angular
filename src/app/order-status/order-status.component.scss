@@ -1,0 +1,220 @@
+@import "../../styles";
+
+// head_+part++++++++++++++++
+.head_part {
+  padding: 12px 10px;
+  background: #F3F4F6;
+  cursor: pointer;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .back {
+    display: flex;
+
+    align-items: flex-start;
+
+    .bak {
+      margin-right: 5px;
+
+      img {
+        width: 30px;
+      }
+    }
+
+    .title {
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+
+        span {
+          display: block;
+          font-size: 15px;
+          color: #93959F;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+// start_tab_desserts+++++++++++
+.tabs_desserts {
+  .tab {
+    margin: 12px 0;
+
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 300px;
+
+      .active-coll {
+        display: none;
+      }
+
+      .active-del {
+        display: none;
+      }
+
+      // .active-cel{
+
+      // }
+      li {
+        list-style: none;
+        color: #93959F;
+        font-size: 14px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 6px 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        span {
+          width: 6px;
+          height: 6px;
+          background-color: #93959F;
+          display: inline-block;
+          border-radius: 50px;
+          margin: 0px 5px;
+        }
+
+        svg {
+          fill: #93959F;
+        }
+      }
+
+      .active {
+        color: $theme_color;
+        font-weight: 900;
+
+        svg {
+          fill: $theme_color;
+        }
+
+        span {
+          background-color: $theme_color;
+        }
+
+      }
+    }
+  }
+}
+
+
+// order_placed+++++++++++++++++++
+
+.order-placed {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+
+  .div_order {
+    text-align: center;
+    width: 100%;
+
+    .animation {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      lottie-player {
+        width: 240px;
+        height: 240px;
+      }
+
+      svg {
+        position: absolute;
+      }
+    }
+
+    .title {
+      font-size: 16px;
+    }
+
+    .stutas {
+      padding: 20px;
+
+      h3 {
+        font-size: 25px;
+        font-weight: bold;
+        color: $theme_color_2;
+      }
+
+      p {
+        color: #4A4A4A;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// fixed_btn++++++++++++++++++++
+
+.fixed_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 99;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+  .contune {
+    .process_btn {
+      position: relative;
+
+      .process {
+        svg {
+          width: 100%;
+          stroke: $theme_color;
+          stroke-width: 2px;
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+          border: 0;
+          font-size: 20px;
+          background: transparent;
+          color: $theme_color;
+          font-weight: normal;
+          outline: 0;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: -5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0px 20px;
+
+          p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+
+            span {
+              width: 28px;
+              display: inline-block;
+
+              img {
+                width: 100%;
+                margin-bottom: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

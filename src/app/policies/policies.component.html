@@ -1,0 +1,81 @@
+<!-- left order history -->
+<div class="lefthistory">
+    <div class="heading_div">
+        <div class="head" [routerLink]="['/items']">
+            <h3><svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0371 20.0827L0.792152 10.9458C0.402616 10.5612 0.402616 9.93981 0.792152 9.5542L10.0371 0.417333C10.5995 -0.139111 11.5144 -0.139111 12.0777 0.417333C12.64 0.973776 12.64 1.87687 12.0777 2.43332L4.16913 10.2505L12.0777 18.0657C12.64 18.6231 12.64 19.5262 12.0777 20.0827C11.5144 20.6391 10.5995 20.6391 10.0371 20.0827Z" />
+                </svg>
+                Back</h3>
+            <p>Policies</p>
+        </div>
+    </div>
+    <div class="tabs_desserts">
+        <div class="tab">
+            <ul>
+                <li  (click)="ShowDiv('A')" (click)="onClick(1)" [ngClass]="{'active': tab==='tab1'}">T&C</li>
+                <li><span></span></li>
+                <li  (click)="ShowDiv('B')" (click)="onClick(2)" [ngClass]="{'active': tab==='tab2'}">Privacy</li>
+                <li><span></span></li>
+                <li  (click)="ShowDiv('C')" (click)="onClick(3)" [ngClass]="{'active': tab==='tab3'}">Cookies</li>
+            </ul>
+        </div>
+    </div>
+    <!--  History++++++++++++++++++++++++++ -->
+    <div class="policies_stutas" *ngIf="currDiv == 'A'">
+        <div class="policies">
+            <div class="head">
+                <h3>Last updated: 23 December, 2020</h3>
+            </div>
+            <div class="cnt">
+                <h4>1. General Information</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+            </div>
+            <div class="cnt">
+                <h4>2. General Information</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+            </div>
+        </div>
+
+    </div>
+    <!--  History++++++++++++++++++++++++++ -->
+    <div class="policies_stutas" *ngIf="currDiv == 'B'">
+        <div class="policies">
+            <div class="head">
+                <h3>Last updated: 23 December, 2020</h3>
+            </div>
+            <div class="cnt">
+                <!-- <h4>1. General Information</h4> -->
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+           
+        </div>
+
+    </div>
+      <!--  History++++++++++++++++++++++++++ -->
+      <div class="policies_stutas" *ngIf="currDiv == 'C'">
+        <div class="policies">
+            <div class="head">
+                <h3>Last updated: 23 December, 2020</h3>
+            </div>
+            <div class="cnt">
+                <!-- <h4>1. General Information</h4> -->
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+            </div>
+            <!-- <div class="cnt">
+                <h4>2. General Information</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version</p>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    
+</div>

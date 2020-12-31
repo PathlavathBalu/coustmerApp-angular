@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+}
+
+body div,
+body p,
+body small,
+body span,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body button,
+body input {
+  font-family: "Roboto", sans-serif !important;
+  line-height: normal !important;
+}
+
+.menu_iteams_popup {
+  padding: 10px;
+}
+
+.menu_iteams_popup .menu {
+  padding-right: 20px;
+}
+
+.menu_iteams_popup .menu .iteams .deals p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff2300;
+  outline: 0;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.menu_iteams_popup .menu .iteams .deals p span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_iteams_popup .menu .iteams .deals p span svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  fill: #ff2300;
+}
+
+.menu_iteams_popup .menu .iteams .list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu_iteams_popup .menu .iteams .list ul li {
+  outline: 0;
+  cursor: pointer;
+}
+
+.menu_iteams_popup .menu .iteams .list ul .active p {
+  font-weight: bold;
+  color: #000;
+}
+
+.menu_iteams_popup .menu .iteams .list ul .active p span svg {
+  visibility: visible;
+}
+
+.menu_iteams_popup .menu .iteams .list ul li {
+  list-style: none;
+}
+
+.menu_iteams_popup .menu .iteams .list ul li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  font-size: 16px;
+  color: #80808A;
+  padding: 12px 0;
+}
+
+.menu_iteams_popup .menu .iteams .list ul li p span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_iteams_popup .menu .iteams .list ul li p span svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  visibility: hidden;
+}
+/*# sourceMappingURL=menu-popup.component.css.map */

@@ -1,0 +1,187 @@
+@import "../../styles";
+
+.sellect_tab{
+    
+    .sel{
+        .title{
+            h3{
+                position: absolute;
+                text-align: center;
+                left: 0;
+                right: 0;
+                color: #fff;
+                font-size: 25px;
+                margin: 45px 0 0;
+            
+            }
+            img{
+                width: 100%;
+                background-color: $theme_color;
+            }
+        }
+       
+    }
+    
+// .logo{
+//     position: absolute;
+//     z-index: 99;
+//     margin: 0px auto;
+//     border-radius: 50px;
+//     text-align: center;
+//     left: 0;
+//     right: 0;
+//     top: 14%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .table{
+//         width: 100px;
+//         height: 100px;
+//         background-color: #fff;
+//         border-radius: 50px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         img{
+//             width: 40px;
+//         }
+//     }
+// }
+svg{
+  width: 100%;
+  height: 100%;
+  fill: $theme_color;
+}
+}
+
+.sellect_date{
+    padding: 10px;
+      // end_pre_order+++++++++++++++++++++++++
+      .date_sellect {
+        .niput_date {
+          .input {
+            position: relative;
+  
+            span {
+              position: absolute;
+              top: 0;
+              right: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 41px;
+              padding-right: 15px;
+  
+              img {
+                width: 20px;
+              }
+            }
+  
+            mat-form-field {
+              width: 100%;
+  
+              .mat-form-field-wrapper {
+                .mat-form-field-flex {
+                  background: transparent;
+                }
+              }
+            }
+  
+          }
+  
+        }
+      }  
+}
+
+// bookatable+++++++++++++++++++++++++++++
+
+// fixed_btn++++++++++++++++++++
+// .fixed_btn++++++++++++++++++++++
+
+.fixed_btn-2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 99;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+  .contune {
+    .process_btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .process-i {
+        width: 50%;
+        button{
+          background: transparent;
+          border: 0;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          width: 100%;
+          color: $theme_color_2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span{
+            margin-top: 3px;
+            margin-left: 6px;
+            svg{
+              fill: $theme_color_2;
+              width: 22px;
+              height: 22px;
+            }
+          }
+         
+        }
+    }
+      .process {
+        position: relative;
+        width: 100%;
+        svg {
+          fill: $theme_color_2;
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+          border: 0;
+          font-size: 20px;
+          background: transparent;
+          color: #fff;
+          font-weight: normal;
+          outline: 0;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: -5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0px 20px;
+
+          p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+
+            span {
+              width: 28px;
+              display: inline-block;
+
+              img {
+                width: 100%;
+                margin-bottom: -3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

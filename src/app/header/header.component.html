@@ -1,0 +1,94 @@
+
+
+<div class="mobile-v">
+
+  <mat-sidenav-container class="sidenav-container" >
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+       
+      <mat-toolbar><div class="hed_logo">
+        <img src="../../assets/images/logo.svg">
+      </div>
+  
+    </mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="['/bookatable']"><div class="img"><img src="../../assets/images/book.svg"></div>Book Now</a>
+        <a mat-list-item href="#" [routerLink]="['/items']"><div class="img"><img src="../../assets/images/order.svg"></div>Order Now</a>
+        <a mat-list-item href="#" [routerLink]="['/loyalty']"><div class="img" ><img src="../../assets/images/loyalty.svg"></div>Loyalty</a>
+        <a mat-list-item href="#" [routerLink]="['/menu']"><div class="img"><img src="../../assets/images/deals.svg"></div>Deals</a>
+        <a mat-list-item href="#" [routerLink]="['/myorders']"><div class="img"><img src="../../assets/images/history.svg"></div>Order History</a>
+        <a mat-list-item href="#" [routerLink]="['/cart']"><div class="img"><img src="../../assets/images/cart_2.svg"></div>Cart</a>
+        <a mat-list-item href="#" [routerLink]="['/profile']"><div class="img" [routerLink]="['/profile']"><img src="../../assets/images/profile.svg"></div>Profile</a>
+       <hr>
+       <a mat-list-item href="#" [routerLink]="['/policies']"><div class="img"><img src="../../assets/images/policies.svg"></div>Policies</a>
+        <a mat-list-item href="#" [routerLink]="['/contactus']"><div class="img"><img src="../../assets/images/contact.svg"></div>Contact</a>
+        <a mat-list-item href="#" [routerLink]="['/cart']"><div class="img"><img src="../../assets/images/log.svg"></div>Logout</a>
+       <div class="ver">
+        <p>Version 2.0</p>
+       </div>
+      </mat-nav-list>
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav"><img src="../../assets/images/menu.svg"></mat-icon>
+          
+        </button>
+        
+        <div class="head_part">
+          <div class="ligo">
+            <img src="../../assets/images/logo.svg">
+          </div>
+          <div class="table"  [routerLink]="['/search']">
+            <div class="search">
+              <img src="../../assets/images/Search.svg">
+            </div>
+            <div class="table" [routerLink]="['/bookatable']">
+              <img src="../../assets/images/table.svg">
+              <span><small>1</small></span>
+            </div>
+            <div class="cart" [routerLink]="['/empty-cart']">
+              <img src="../../assets/images/cart.svg">
+              <span><small>1</small></span>
+            </div>
+          </div>
+        </div>
+      
+      </mat-toolbar>
+      <!-- Add Content Here -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <div class="mg_bt"></div>
+
+  <!-- offer_screens -->
+  <div class="offer">
+    
+  <div class="offer_rib">
+    <div class="offer">
+      <svg width="375" height="37" viewBox="0 0 375 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M370.066 32.7411L375 37V0L0 6.67572e-06V37L4.94317 32.7411L9.88698 37L14.8276 32.7411L19.7637 37L24.7024 32.7411L29.6398 37L34.5773 32.7411L39.5147 37L44.4502 32.7411L49.3831 37L54.3199 32.7411L59.2567 37L64.1934 32.7411L69.1308 37L74.067 32.7411L79.0025 37L83.9386 32.7411L88.8735 37L93.809 32.7411L98.7432 37L103.679 32.7411L108.612 37L113.548 32.7411L118.481 37L123.414 32.7411L128.348 37L133.282 32.7411L138.213 37L143.145 32.7411L148.082 37L153.013 32.7411L157.944 37L162.874 32.7411L167.808 37L172.743 32.7411L177.677 37L182.611 32.7411L187.454 36.9211V37L187.5 36.9606L187.546 37V36.9212L192.397 32.7411L197.341 37L202.282 32.7411L207.218 37L212.157 32.7411L217.094 37L222.032 32.7411L226.969 37L231.904 32.7411L236.837 37L241.774 32.7411L246.711 37L251.648 32.7411L256.585 37L261.521 32.7411L266.457 37L271.393 32.7411L276.328 37L281.263 32.7411L286.197 37L291.133 32.7411L296.067 37L301.002 32.7411L305.936 37L310.868 32.7411L315.803 37L320.736 32.7411L325.667 37L330.6 32.7411L335.536 37L340.467 32.7411L345.398 37L350.328 32.7411L355.263 37L360.197 32.7411L365.131 37L370.066 32.7411Z" />
+        </svg>
+        
+      <h3><svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.947 2.11957C14.2986 0.809021 16.1386 0 18.1648 0C22.3002 0 25.6648 3.36466 25.6644 7.5C25.6644 11.6353 22.3002 15 18.1648 15C16.1382 15 14.2986 14.191 12.9474 12.8804C12.5144 12.4606 12.1326 11.9897 11.8104 11.4769C11.0854 10.3229 10.6644 8.95965 10.6644 7.49923C10.6644 6.03958 11.0854 4.67675 11.81 3.52306C12.1322 3.0103 12.5144 2.53937 12.947 2.11957ZM12.3088 7.49923C12.3088 10.7287 14.9365 13.356 18.1648 13.356C21.3935 13.356 24.0208 10.7287 24.0208 7.49923C24.0208 4.2705 21.3935 1.6436 18.1648 1.6436C14.9365 1.6436 12.3088 4.2705 12.3088 7.49923ZM4.67834 2.82137C4.67834 2.4341 4.99281 2.11963 5.38009 2.11963H11.9828C11.6071 2.55067 11.2756 3.02043 10.9952 3.52312H5.38009C4.99281 3.52312 4.67834 3.20865 4.67834 2.82137ZM8.52435 6.79761C8.91162 6.79761 9.22609 7.11169 9.22609 7.49935C9.22609 7.88702 8.91201 8.20149 8.52435 8.20149H0.701745C0.314081 8.20149 0 7.88702 0 7.49935C0 7.11208 0.314081 6.79799 0.701745 6.79761H8.52435ZM5.38009 11.4771C4.99281 11.4771 4.67834 11.7911 4.67834 12.1788C4.67834 12.5665 4.99281 12.8805 5.38009 12.8805H11.9828C11.6071 12.4495 11.2756 11.9797 10.9952 11.4771H5.38009Z" fill="white"/>
+        <path d="M19.2551 7.80645L19.2577 7.80386L19.2603 7.80127L21.0715 5.99012C21.4087 5.65287 21.4087 5.10613 21.0715 4.76887C20.7342 4.43162 20.1875 4.43162 19.8502 4.76887L18.6448 5.97429L16.9456 4.27512C16.6081 3.93758 16.0616 3.93787 15.7244 4.27512C15.3871 4.61237 15.3869 5.15882 15.7244 5.49636L18.0342 7.80616C18.3712 8.1437 18.9179 8.1437 19.2551 7.80645Z" fill="white"/>
+        <path d="M17.6091 7.48847L17.6065 7.49106L17.6039 7.49365L15.7928 9.3048C15.4555 9.64206 15.4555 10.1888 15.7928 10.526C16.13 10.8633 16.6768 10.8633 17.014 10.526L18.2194 9.32063L19.9186 11.0198C20.2562 11.3573 20.8026 11.3571 21.1399 11.0198C21.4771 10.6825 21.4774 10.1361 21.1399 9.79856L18.8301 7.48876C18.4931 7.15122 17.9464 7.15122 17.6091 7.48847Z" fill="white"/>
+        </svg>
+        Very Busy - Unservicable checkback later</h3>
+    </div>
+  </div>
+  
+  </div>
+  <!-- end_offer_screen -->
+</div>
+
+<!-- end_mobile-version -->
+

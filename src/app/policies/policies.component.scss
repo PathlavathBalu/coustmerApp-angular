@@ -1,0 +1,124 @@
+@import "../../styles";
+
+//   end_header_part+++++++++++++++++
+.lefthistory {
+  position: relative;
+  z-index: 10;
+  .heading_div {
+    padding: 15px 10px;
+    background: #F3F4F6;
+    .head {
+        position: relative;
+      h3 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+        color:$theme_color_2;
+        height: 33px;
+        position: relative;
+        z-index: 9;
+
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          fill: $theme_color_2;
+        }
+      }
+
+      p {
+        height: 33px;
+        position: absolute;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+  // start_tab_desserts+++++++++++
+  .tabs_desserts {
+    .tab {
+      margin: 12px 0;
+
+      ul {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 300px;
+
+        li {
+          list-style: none;
+          color: #93959F;
+          font-size: 14px;
+          text-transform: uppercase;
+          position: relative;
+          padding: 6px 0;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+
+          span {
+            width: 6px;
+            height: 6px;
+            background-color: #93959F;
+            display: inline-block;
+            border-radius: 50px;
+          }
+        }
+
+        .active {
+          color: $theme_color;
+          font-weight: 900;
+
+          &::before {
+            position: absolute;
+            height: 2px;
+            width: 15px;
+            background-color: $theme_color;
+            content: '';
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0px auto;
+          }
+        }
+      }
+    }
+  }
+
+  .policies_stutas{
+
+    padding: 20px;
+    .policies{
+        .head{
+            h3{
+                font-size: 16px;
+                font-weight: bold;
+                color: $theme_color_2;
+            }
+        }
+        .cnt{
+            h4{
+                font-weight: bold;
+                font-size: 15px;
+                margin-bottom: 7px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+  }
+
+}
